@@ -1,0 +1,36 @@
+body {
+    background-image: url('/images/sawahan.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 400px;
+    background: rgba(18, 154, 147, 0.857);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.login-form {
+    width: 100%;
+}
+.remember {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card-header{
+    text-align: center;
+    margin-bottom: 20px;
+}

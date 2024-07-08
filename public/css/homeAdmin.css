@@ -189,6 +189,36 @@ body {
     margin-top: 50px;
 }
 
+/* Menghilangkan garis bawah pada tautan */
+.tambahKonten button:hover {
+    text-decoration: none;
+    background-color: #ee9898;
+    color: rgb(95, 95, 95); /* Anda bisa mengatur warna sesuai keinginan */
+}
+
+.tambahKonten a:hover {
+    text-decoration: none;
+    color: rgb(0, 170, 255); /* Anda bisa mengatur warna sesuai keinginan */
+}
+
+.card{
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar-nav {
@@ -210,4 +240,12 @@ body {
         margin-left: 0;
         width: 100%;
     }
+}
+
+.btn{
+    list-style-type: none;
+}
+
+.btn-secondary {
+    margin-left: 5px;
 }
