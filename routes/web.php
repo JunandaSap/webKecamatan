@@ -13,6 +13,7 @@ Route::post('/login', [AdminController::class, 'login']);
 Route::get('/register', [AdminController::class, 'showRegisterForm'])->name('admin.register');
 Route::post('/register', [AdminController::class, 'register']);
 Route::post('/logout', [AdminController::class, 'logout'])->name('admin.logout');
+Route::get('/', [BeritaController::class, 'showBerita'])->name('home');
 Route::get('/tambah_konten', function () {
     return view('tambah_konten');
 });

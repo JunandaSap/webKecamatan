@@ -39,5 +39,11 @@ class BeritaController extends Controller
         $beritas = Berita::all();
         return view('homeAdmin', compact('beritas'));
     }
+
+    public function showBerita() {
+        $beritas = Berita::all();
+        return view('home', compact('beritas'));
+    }
+
 }
 
