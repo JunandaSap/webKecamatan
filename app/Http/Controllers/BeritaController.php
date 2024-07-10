@@ -3,7 +3,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Berita;
-
+use App\Models\Pengumuman;
+use App\Models\KegiatanDesa;
 class BeritaController extends Controller
 {
     public function create()
@@ -40,9 +41,11 @@ class BeritaController extends Controller
         return view('homeAdmin', compact('beritas'));
     }
 
-    public function showBerita() {
+    public function showBerita()  {
         $beritas = Berita::all();
-        return view('home', compact('beritas'));
+        $pengumumans = Pengumuman::all();
+        $kegiatan_desas = KegiatanDesa::all();
+        return view('home', compact('beritas', 'pengumumans', 'kegiatan_desas'));
     }
 
 }
